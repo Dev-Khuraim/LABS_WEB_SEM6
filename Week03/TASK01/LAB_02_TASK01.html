@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Product Pricing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .pricing-table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .pricing-table th {
+            background-color: #3498db;
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        .pricing-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .pricing-table tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        .product-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 1.5em;
+            color: #27ae60;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #27ae60;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #219d53;
+        }
+
+        .pricing-table img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Men's Wallet</th>
+                <th>Cap</th>
+                <th>T-Shirt</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="product-name">Description</td>
+                <td>A stylish leather wallet</td>
+                <td>A comfortable baseball cap</td>
+                <td>A classic cotton t-shirt</td>
+            </tr>
+            <tr>
+                <td class="product-name">Price</td>
+                <td class="price">$29.99</td>
+                <td class="price">$19.99</td>
+                <td class="price">$24.99</td>
+            </tr>
+            <tr>
+                <td class="product-name">Material</td>
+                <td>Genuine leather</td>
+                <td>Cotton blend</td>
+                <td>100% Cotton</td>
+            </tr>
+            <tr>
+                <td class="product-name">Color Options</td>
+                <td>Black, Brown, Tan</td>
+                <td>Blue, Red, Black</td>
+                <td>White, Black, Gray</td>
+            </tr>
+            <tr>
+                <td class="product-name">Image</td>
+                <td><img src="wallet_image.jpg" alt="Men's Wallet"></td>
+                <td><img src="cap_image.jpg" alt="Cap"></td>
+                <td><img src="tshirt_image.jpg" alt="T-Shirt"></td>
+            </tr>
+            <tr>
+                <td class="product-name"></td>
+                <td><a href="#" class="button">Buy Now</a></td>
+                <td><a href="#" class="button">Buy Now</a></td>
+                <td><a href="#" class="button">Buy Now</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
